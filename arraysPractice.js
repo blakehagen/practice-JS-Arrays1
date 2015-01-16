@@ -12,14 +12,15 @@ var first = function(arr) {
 //Next problem
 
 
-
 var arr = [40,50,60];
 //Create a function named 'last' that is given 'arr' as the argument and returns the last item the given array.
 
 
   //Code Here
 
-
+var last = function(arr) {
+  return[2];
+}
 //Next Problem
 
 
@@ -27,7 +28,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
 
   //Code Here
-
+var looper = function(family) {
+  for (var i = 0; i < family.length; i++) {
+    alert(family[i]);
+  };
+}
 
 //Next problem
 
