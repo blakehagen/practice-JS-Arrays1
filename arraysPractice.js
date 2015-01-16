@@ -130,6 +130,12 @@ var str = 'this is my sentence';
 
   //Code Here
 
+var reverse = function(str) {
+  str.reverse();
+  console.log(reverse);
+}
+
+
 
 //Next Problem
 
