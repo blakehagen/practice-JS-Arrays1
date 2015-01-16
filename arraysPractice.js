@@ -87,6 +87,10 @@ var odds = []
 
   //Code Here
 
+var divider = function(nums, evens, odds) {
+  
+}
+
 
 //Next Problem
 
