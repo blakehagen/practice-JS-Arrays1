@@ -19,7 +19,8 @@ var arr = [40,50,60];
   //Code Here
 
 var last = function(arr) {
-  return[2];
+  console.log(arr[arr.length -1])
+  return arr[arr.length - 1];
 }
 //Next Problem
 
@@ -28,9 +29,9 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
 
   //Code Here
-var looper = function(family) {
+var looper = function(arr) { //could call it family too instead of "arr"
   for (var i = 0; i < family.length; i++) {
-    alert(family[i]);
+    alert(family[i]); // or console.log(myArray[i]);
   };
 }
 
@@ -50,12 +51,22 @@ var reversedLooper = function(letters) {
 
 var letters = ['A', 'B', 'C', 'D', 'E'];
 
-var reversedLooper = function(letters) {
+var reversedLooper = function(letters) {    // or could use arr instead of letters to keep it more generic in the parameter name
   letters.reverse();
   for (var i = 0; i < letters.length; i++) {
     alert(letters[i]);
   };
 }
+
+//Jakes way:
+
+function reversedLooper (myArray) {
+  for (var i = myArray.length; i > 0; i--) {
+    console.log(myArray[i-1]);
+  }
+}
+
+
 
 --
 //Next Problem
@@ -198,6 +209,19 @@ for(var i = 0; i < num2; i++){
 
   //Code Here
 
+function longestArray(arr1, arr2) {
+  if(arr1.length > arr2.length) {
+    return arr1;
+  }
+  else {
+    return arr2;
+  }
+}
+
+
+
+
+
 
 /*As a continuation of the previous problem, write another function called 'both'.
   Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example)
@@ -205,3 +229,36 @@ for(var i = 0; i < num2; i++){
 */
 
   //Code Here
+
+  // MORNING CHALLENGE Sat 1/17/15 ******
+
+var nums = ["hello", "javascript", "awesome"];
+
+var finder = function(word, arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === word) {
+      return true;
+    }
+  }
+  return false;
+}
+
+//One line solution to morning challenge --->
+function oneLine (string, myArray) {
+  return myArray.indexOf(string) > -1 ? true : false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
