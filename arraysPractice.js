@@ -205,8 +205,6 @@ var addTen = function(arr) {
 
 //Next Problem
 
-
-
 var num1 = Math.floor(Math.random() * (30 - 0) + 0);
 var num2 = Math.floor(Math.random() * (30 - 0) + 0);
 var arr1 = [];
@@ -222,6 +220,15 @@ for(var i = 0; i < num2; i++){
 
   //Code Here
 
+  var longestArray = function(arr1, arr2) {
+    if(arr1.length > arr2.length) {
+      return arr1;
+    }
+  else {
+    return arr2;
+  }
+}
+
 function longestArray(arr1, arr2) {
   if(arr1.length > arr2.length) {
     return arr1;
@@ -231,11 +238,6 @@ function longestArray(arr1, arr2) {
   }
 }
 
-
-
-
-
-
 /*As a continuation of the previous problem, write another function called 'both'.
   Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example)
   'both' should return a new array full of numbers that are found in both arr1 and arr2.
@@ -243,11 +245,10 @@ function longestArray(arr1, arr2) {
 
   //Code Here
 
-  
-
-
-
-
+var both = function (arr1, arr2) {
+  var newArr = arr1.concat(arr2);
+  return newArr;
+}
 
 
 
