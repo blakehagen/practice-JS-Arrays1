@@ -131,22 +131,16 @@ var finder = function(arr) {
 
 //Next problem
 
-
-
 var str = 'this is my sentence';
 //Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
 
   //Code Here
 
-var reverse = function(str) {
-  str.reverse();
-  console.log(reverse);
+var reverse = function(string) {
+  return string.split('').reverse().join('');
 }
 
-
-
 //Next Problem
-
 
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 /*
@@ -161,20 +155,37 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
   //Code Here
 
+  var removeItem = function(list, item) {
+    for (var i = 0; i < list.length; i++) {
+      if (item === list[i]) {
+        list.splice(i, 1);
+        return list;
+      }
+    }
+  }
+
 //removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
-
+var addItem = function (list, item) {
+  list.push(item);
+  return list;
+}
 
 //Next Problem
-
 
 
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
   //Code Here
 
-
+var maker = function() {
+  var arr = [];
+  for (var i = 1; i < 216; i++) {
+    arr.push(i);
+  };
+  return arr;
+}
 
 //Next Problem
 
@@ -185,7 +196,12 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 
   //Code Here
 
-
+var addTen = function(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = parseInt(arr[i]) + 10;
+  };
+  return arr;
+}
 
 //Next Problem
 
@@ -226,6 +242,15 @@ function longestArray(arr1, arr2) {
 */
 
   //Code Here
+
+  
+
+
+
+
+
+
+
 
   // MORNING CHALLENGE Sat 1/17/15 ******
 
